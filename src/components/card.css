@@ -1,0 +1,23 @@
+.card-main {
+  max-height: 50vh;
+  display: flex;
+  flex-direction: column (1, 1);
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.card-img img{
+  max-width: 70%;
+  height: auto;
+  background-size: cover;
+}
+
+.card-text {
+  max-width: 70%
+}
+
+.card-title {
+
+}
