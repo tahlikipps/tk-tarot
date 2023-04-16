@@ -24,7 +24,7 @@ class App extends Component {
   //}
 
   selectCard = () => {
-    const url = "https://raw.githubusercontent.com/tahlikipps/tahlikipps.github.io/main/api-data/Data/data.json?token=GHSAT0AAAAAACBLYQMYWUPYCH5LPMBEEKHKZB37EWQ"
+    const url = "https://raw.githubusercontent.com/tahlikipps/tahlikipps.github.io/main/data.json"
     fetch(url)
     .then(response => response.json())
     .then((data) => {
