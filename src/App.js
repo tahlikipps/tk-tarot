@@ -28,7 +28,9 @@ class App extends Component {
     fetch(url)
     .then(response => response.json())
     .then((data) => {
+      console.log(data)
       let randCard = Math.floor(Math.random() * 78)
+
       console.log(data.cards[`${randCard}`]);
       this.setState({
         card: data.cards[`${randCard}`],

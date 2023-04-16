@@ -13,7 +13,16 @@ h2 {
   font-size: 6vw;
 }
 
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 4vw;
+}
 p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2vw;
+}
+
+li {
   font-family: 'Roboto', sans-serif;
   font-size: 2vw;
 }

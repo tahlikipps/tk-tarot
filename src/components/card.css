@@ -14,10 +14,9 @@
   background-size: cover;
 }
 
-.card-text {
-  max-width: 70%
+.card-left {
+  max-width: 30%;
 }
-
-.card-title {
-
+.card-right {
+  max-width: 70%
 }
