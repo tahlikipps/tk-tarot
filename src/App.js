@@ -17,18 +17,15 @@ class App extends Component {
   }
 
   selectCard = () => {
-    const url = "https://raw.githubusercontent.com/tahlikipps/tahlikipps.github.io/main/api-data/Data/data.json?token=GHSAT0AAAAAACBLYQMZIWQPZ4MP3TPJP2LUZB2UVKA"
+    const url = "https://raw.githubusercontent.com/tahlikipps/tahlikipps.github.io/main/api-data/Data/data.json?token=GHSAT0AAAAAACBLYQMZWMYGSP6ZOLVTDKRWZB33PQQ"
     fetch(url)
     .then(response => response.json())
     .then((data) => {
-      let randCard = Math.floor(Math.random() * 78);
+      let randCard = Math.floor(Math.random() * 78)
       console.log(data.cards[`${randCard}`]);
       this.setState({card: data.cards[`${randCard}`]});
     });
   }
-
-
-
 
   render () {
     return (
