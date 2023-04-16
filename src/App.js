@@ -7,7 +7,6 @@ import Card from './components/card';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.handleClick = this.handleClick.bind(this);
     this.state = {
       card: [],
       cardVisible: false,
@@ -16,13 +15,13 @@ class App extends Component {
   }
 
 
-  handleClick = (event) => {
-    this.props.selectCard(event.target.value);
-    this.setState({
-      cardVisble: true,
-      ballVisible: false,
-    })
-  }
+  //handleClick = (event) => {
+    //this.props.selectCard(event.target.value);
+    //this.setState({
+      //cardVisble: true,
+      //ballVisible: false,
+    //})
+  //}
 
   selectCard = () => {
     const url = "https://raw.githubusercontent.com/tahlikipps/tahlikipps.github.io/main/api-data/Data/data.json?token=GHSAT0AAAAAACBLYQMYHZCOVZTMX7GABGKEZB35IXQ"
@@ -31,7 +30,11 @@ class App extends Component {
     .then((data) => {
       let randCard = Math.floor(Math.random() * 78)
       console.log(data.cards[`${randCard}`]);
-      this.setState({card: data.cards[`${randCard}`]});
+      this.setState({
+        card: data.cards[`${randCard}`],
+        cardVisible: true,
+        ballVisible: false
+      });
     });
   }
 
@@ -41,13 +44,12 @@ class App extends Component {
         <div className="header">
            <Header />
         </div>
-        <div className="main">
-          <Ball
-            showBall={this.handleClick}
-          />
+        <div className="main"
+            showBall={this.selectCard}>
             {this.state.ballVisible ? <Ball /> : null}
-          <div className="card">
-            <Card {...this.state} />
+          <div className="card"
+            showCard={this.selectCard}>
+            {this.state.cardVisible ? <Card {...this.state} /> : null}
           </div>
           <span className="CTA-btn-yellow" onClick={this.selectCard}><p>Get a reading</p></span>
         </div>

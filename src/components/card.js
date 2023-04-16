@@ -9,7 +9,7 @@ class Card extends React.Component {
       <div className="card-main">
         <div className="card-img">
           <img src={this.props.card.img} alt={this.props.card.alt} />
-          <p>{this.props.card.oneword}</p>
+          <p>In one word: {this.props.card.oneword}</p>
         </div>
         <div className="card-text">
           <div className="card-title">
