@@ -9,7 +9,7 @@ class Card extends React.Component {
       <div className="card-main">
           <div className="card-left">
             <div className="card-img">
-              <img src={this.props.card.img} />
+              <img src={this.props.card.img} alt="Image of tarot card selected"/>
             </div>
             <div className="carddetails-carousel">
               <p>In one word: {this.props.card.oneword}</p>
