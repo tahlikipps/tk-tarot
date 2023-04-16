@@ -31,7 +31,6 @@ class App extends Component {
 
 
   render () {
-    const { showHideBall, showHideCard } = this.state;
     return (
       <div className= "app">
         <div className="header">
