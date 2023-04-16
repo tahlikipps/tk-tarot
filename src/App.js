@@ -1,23 +1,31 @@
 import React, { Component } from "react";
 import './App.css';
 import Header from './components/header';
+import Ball from './components/ball';
 import Card from './components/card';
 
 class App extends Component {
   constructor(props) {
     super(props);
+    this.handleClick = this.handleClick.bind(this);
     this.state = {
       card: [],
+      cardVisible: false,
+      ballVisible: true,
     };
   }
 
 
   handleClick = (event) => {
     this.props.selectCard(event.target.value);
+    this.setState({
+      cardVisble: true,
+      ballVisible: false,
+    })
   }
 
   selectCard = () => {
-    const url = "https://raw.githubusercontent.com/tahlikipps/tahlikipps.github.io/main/api-data/Data/data.json?token=GHSAT0AAAAAACBLYQMZWMYGSP6ZOLVTDKRWZB33PQQ"
+    const url = "https://raw.githubusercontent.com/tahlikipps/tahlikipps.github.io/main/api-data/Data/data.json?token=GHSAT0AAAAAACBLYQMYHZCOVZTMX7GABGKEZB35IXQ"
     fetch(url)
     .then(response => response.json())
     .then((data) => {
@@ -34,9 +42,10 @@ class App extends Component {
            <Header />
         </div>
         <div className="main">
-            <div className="pending-ball">
-              <img src={`${process.env.PUBLIC_URL}/assets/logo-lg.png`} className="App-logo" alt="spinning crystal ball"/>
-            </div>
+          <Ball
+            showBall={this.handleClick}
+          />
+            {this.state.ballVisible ? <Ball /> : null}
           <div className="card">
             <Card {...this.state} />
           </div>
