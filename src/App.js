@@ -14,15 +14,6 @@ class App extends Component {
     };
   }
 
-
-  //handleClick = (event) => {
-    //this.props.selectCard(event.target.value);
-    //this.setState({
-      //cardVisble: true,
-      //ballVisible: false,
-    //})
-  //}
-
   selectCard = () => {
     const url = "https://raw.githubusercontent.com/tahlikipps/tahlikipps.github.io/main/data.json"
     fetch(url)
@@ -35,7 +26,7 @@ class App extends Component {
       this.setState({
         card: data.cards[`${randCard}`],
         cardVisible: true,
-        ballVisible: false
+        ballVisible: false,
       });
     });
   }
@@ -53,9 +44,8 @@ class App extends Component {
             showCard={this.selectCard}>
             {this.state.cardVisible ? <Card {...this.state} /> : null}
           </div>
-          <div className="CTA-btn-yellow" onClick={this.selectCard}><p>Get a reading</p></div>
+          <div className="CTA-btn-yellow" onClick={this.selectCard}><p><strong>Get a reading</strong></p></div>
         </div>
-        <div className=""></div>
       </div>
     );
   }

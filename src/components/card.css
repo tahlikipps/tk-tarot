@@ -3,9 +3,9 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
+  margin-left: 16px;
+  margin-right: 16px;
+
 }
 .card-img img{
   max-width: 100%;
