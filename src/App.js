@@ -53,7 +53,7 @@ class App extends Component {
             showCard={this.selectCard}>
             {this.state.cardVisible ? <Card {...this.state} /> : null}
           </div>
-          <span className="CTA-btn-yellow" onClick={this.selectCard}><p>Get a reading</p></span>
+          <div className="CTA-btn-yellow" onClick={this.selectCard}><p>Get a reading</p></div>
         </div>
         <div className=""></div>
       </div>
