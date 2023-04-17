@@ -11,8 +11,8 @@ class Header extends React.Component {
     return (
       <div className="header-main">
           <img className="tk-tarot-logo-header" src={`${process.env.PUBLIC_URL}/assets/tk-tarot-logo-header.png`} alt="logo" />
-            <span><FontAwesomeIcon className="menu-icon" icon={faBars} />
-            </span>
+          <span><FontAwesomeIcon className="menu-icon" icon={faBars} />
+          </span>
       </div>
   )}
 }

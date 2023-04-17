@@ -10,21 +10,25 @@
 
 h2 {
   font-family: 'Oswald', sans-serif;
-  font-size: 6vw;
+  font-size: 5.5vw;
+  margin: 0;
 }
 
 h3 {
   font-family: 'Oswald', sans-serif;
-  font-size: 4vw;
+  font-size: 3.5vw;
+  margin: 0;
 }
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 2vw;
+  margin: 0;
 }
 
 li {
   font-family: 'Roboto', sans-serif;
   font-size: 2vw;
+  margin: 0;
 }
 
 .header {
