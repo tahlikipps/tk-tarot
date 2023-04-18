@@ -53,7 +53,6 @@ class App extends Component {
         <div className="header">
            <Header />
         </div>
-
         <div className="main"
             showBall={this.selectCard}>
             {this.state.ballVisible ? <Ball /> : null}
