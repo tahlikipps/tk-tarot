@@ -10,29 +10,30 @@
 
 h2 {
   font-family: 'Oswald', sans-serif;
-  font-size: 5.5vw;
+  font-size: 5vw;
   margin: 0;
 }
 
 h3 {
   font-family: 'Oswald', sans-serif;
-  font-size: 3.5vw;
+  font-size: 3vw;
   margin: 0;
 }
 p {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.75vw;
+  font-size: 1.5vw;
   margin: 0;
 }
 
 li {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.75vw;
+  font-size: 1.5vw;
   margin: 0;
 }
 
 .header {
   width: 100%;
+  position: sticky;
 }
 
 .main {
@@ -43,15 +44,4 @@ li {
   justify-content: center;
   width: 70%;
   background-color: white;
-}
-
-
-.CTA-btn-yellow {
-  background-color: #FCFF57;
-  border-radius: 5px;
-  margin-top: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
 }
