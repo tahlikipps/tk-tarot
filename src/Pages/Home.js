@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Routes, Route } from 'react-router-dom';
 import './Home.css';
-import Header from '../components/header';
 import Ball from '../components/ball';
 import Card from '../components/card';
 import Spinner from "../components/Spinner";
