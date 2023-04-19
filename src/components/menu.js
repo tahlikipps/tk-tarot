@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './menu.css';
 
 class Menu extends React.Component {
@@ -15,7 +16,7 @@ class Menu extends React.Component {
             </a>
           </li>
           <li>
-            <a className="menu-item" href="/">
+            <a className="menu-item" href="/YesNo">
               Seeking a Yes or No?
             </a>
           </li>
@@ -25,7 +26,7 @@ class Menu extends React.Component {
             </a>
           </li>
           <li>
-            <a className="menu-item" href="/">
+            <a className="menu-item" href="/About">
               About TEEKAY Tarot
             </a>
           </li>
