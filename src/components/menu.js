@@ -26,7 +26,7 @@ class Menu extends React.Component {
           </li>
           <li>
             <a className="menu-item" href="/About">
-              About TEEKAY Tarot
+              About
             </a>
           </li>
         </ul>

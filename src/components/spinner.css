@@ -15,8 +15,8 @@
 }
 
 .loading-spinner {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   border: 10px solid #f3f3f3;
   border-top: 10px solid #FF206E;
   border-radius: 50%;
