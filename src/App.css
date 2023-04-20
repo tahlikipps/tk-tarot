@@ -9,28 +9,6 @@
   align-items: center;
 }
 
-h2 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 5vw;
-  margin: 0;
-}
-
-h3 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 3vw;
-  margin: 0;
-}
-p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5vw;
-  margin: 0;
-}
-
-li {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5vw;
-  margin: 0;
-}
 
 .header {
   width: 100%;
