@@ -20,7 +20,7 @@ class Menu extends React.Component {
             </a>
           </li>
           <li>
-            <a className="menu-item" href="/">
+            <a className="menu-item" href="/AllCards">
               All cards
             </a>
           </li>
