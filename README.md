@@ -1,5 +1,5 @@
 # TEEKAY Tarot
-TEEKAY Tarot is a responsive web application aimed at making tarot readings more digestable for the not so earnest.
+TEEKAY Tarot is a responsive web application aimed at making tarot readings more digestable for the not so earnest enthusiasts.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Key features include:
