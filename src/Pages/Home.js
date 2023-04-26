@@ -34,7 +34,7 @@ class Home extends Component {
     fetch(url)
     .then(response => response.json())
     .then((data) => {
-      //console.log(data)
+      console.log(data.cards)
       let randCard = Math.floor(Math.random() * 78)
 
       //console.log(data.cards[`${randCard}`]);
