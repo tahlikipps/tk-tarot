@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './AllCards.css';
-import SearchBar from '../components/searchbar';
+//import SearchBar from '../components/searchbar';
 
 class AllCards extends Component {
   constructor(props) {
