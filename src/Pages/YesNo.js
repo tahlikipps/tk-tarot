@@ -60,7 +60,7 @@ class YesNo extends Component {
           </div>
           {this.state.cardVisible ?
            <div className="yesorno">
-            <img src={this.state.card.img} />
+            <img src={this.state.card.img} alt="Selected tarot card"/>
             <p>The {this.state.card.name} card says:</p>
             <h2>{this.state.card.YesNoMaybe}</h2>
            </div>
