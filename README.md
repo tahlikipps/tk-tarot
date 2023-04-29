@@ -1,6 +1,6 @@
 # TEEKAY Tarot
 TEEKAY Tarot is a responsive web application aimed at making tarot readings more digestable for the not so earnest enthusiasts.
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Site can be visited here: https://cheery-crisp-fd856a.netlify.app/
 
 Key features include:
 - Random card selection from API to give daily reading.
@@ -10,6 +10,7 @@ Key features include:
 What was used:
 - Create React App template (https://github.com/facebook/create-react-app)
 - API creation: Chat GPT to generate content, Google sheets and extension to generate JSON
+- Netlify for site hosting
 - TBC 
 
 
