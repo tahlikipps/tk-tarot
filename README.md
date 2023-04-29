@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Key features include:
 - Random card selection from API to give daily reading.
-- [IN PROGRESS] Yes or No response to user question with animation.
+- Yes or No response to user question with loading CSS animation.
 - [TBC] 
 
 What was used:
