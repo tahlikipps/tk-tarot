@@ -1,0 +1,64 @@
+
+@keyframes loading-flipperFadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
+
+#loading-flipper {
+
+  position: relative;
+}
+
+#loading-flipper img {
+  animation-duration: 10s;
+  animation-name: loading-flipperFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#loading-flipper img:nth-of-type(1) {
+  animation-delay: 3s;
+  width:75px;
+  height:auto;
+
+}
+#loading-flipper img:nth-of-type(2) {
+  animation-delay: 2s;
+  width:75px;
+  height:auto;
+}
+#loading-flipper img:nth-of-type(3) {
+  animation-delay: 1s;
+  width:75px;
+  height:auto;
+}
+#loading-flipper img:nth-of-type(4) {
+  animation-delay: 0;
+  width:75px;
+  height:auto;
+}
+
+.flipper-container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -49,12 +49,10 @@ class Home extends Component {
   render () {
     return (
         <div>
-          <div className="main"
-              showBall={this.selectCard}>
+          <div className="main">
               {this.state.ballVisible ? <Ball /> : null}
               {this.state.spinnerVisible ? <Spinner /> : null}
-            <div className="card"
-              showCard={this.selectCard}>
+            <div className="card">
               {this.state.cardVisible ? <Card {...this.state} /> : null}
             </div>
             <div className="CTA-btn" onClick={this.selectCard}>
