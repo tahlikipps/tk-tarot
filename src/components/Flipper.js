@@ -3,7 +3,7 @@ import "./flipper.css";
 
 export default function Flipper() {
   return (
-    <div className="flipper-container">
+    <div>
       <div id="loading-flipper">
         <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/RWS_Tarot_00_Fool.jpg" alt="The fool" />
         <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/RWS_Tarot_01_Magician.jpg" alt="The magician" />

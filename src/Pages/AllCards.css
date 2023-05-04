@@ -7,3 +7,12 @@
   justify-content: center;
   background-color: white;
 }
+
+.listed-card img {
+  width:75px;
+  height:auto;
+}
+
+ul {
+  list-style-type: none;
+}
