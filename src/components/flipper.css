@@ -19,8 +19,8 @@
 
 
 #loading-flipper {
-  align-self: center;
   position: relative;
+  align-content: center;
 }
 
 #loading-flipper img {
