@@ -16,7 +16,6 @@ class AllCards extends Component {
     fetch(url)
     .then(response => response.json())
     .then((data) => {
-      console.log(data.cards)
       let array = Object.values(data.cards)
       this.setState({
         visiblecards: array,
@@ -38,14 +37,18 @@ class AllCards extends Component {
               <ul className="cardlist">
 
                 {this.state.visiblecards.map(card => {
-                  console.log(card)
                   return (
+                    <a href="/">
                       <li>
                         <div className="listed-card" key={card.key}>
-                          <img src={card.img} alt="Tarot card selected"/>
-                          {card.name}
+                          <img src={card.img} alt="{Tarot card selected}"/>
+                          <div className="listed-card-details">
+                            <h2>{card.name}</h2>
+                            <p>This card in one word: {card.oneword}</p>
+                          </div>
                         </div>
                       </li>
+                    </a>
                   )
                 })}
               </ul>
