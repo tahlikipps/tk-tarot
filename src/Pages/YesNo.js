@@ -20,8 +20,9 @@ class YesNo extends Component {
     this.setState({
       flipperVisible: true,
       buttonVisible: false,
+      cardVisible: false,
     });
-    await delay(6000);
+    await delay(5000);
     const url =
       "https://raw.githubusercontent.com/tahlikipps/tahlikipps.github.io/main/data.json";
     fetch(url)

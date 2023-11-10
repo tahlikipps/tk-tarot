@@ -28,8 +28,9 @@ class Header extends React.Component {
     return (
       <div>
         <div className="header-main">
+          <a href="/">
             <img className="tk-tarot-logo-header" src={`${process.env.PUBLIC_URL}/assets/tk-tarot-logo-header.png`} alt="logo" />
-
+          </a>
               {this.state.burgerVisible ? <FontAwesomeIcon className="menu-icon" icon={faBars} onClick={this.showMenu} /> : null}
               {this.state.crossVisible ? <FontAwesomeIcon className="menu-icon" icon={faXmark} onClick={this.showMenu} /> : null}
 
